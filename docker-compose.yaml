@@ -5,10 +5,11 @@ services:
           context: .
           dockerfile: dockerfile
         ports:  
-          - "14333:1433"
+          - "1433:1433"
         env_file:
           - sqlserver.env
           - sapassword.env
+        restart: always
         volumes: 
           - sqlsystem:/var/opt/mssql/
           - sqldata:/var/opt/sqlserver/data
