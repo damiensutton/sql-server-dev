@@ -1,1 +1,3 @@
 sapassword.env
+/sqlbackup/*.bak
+.DS_Store
