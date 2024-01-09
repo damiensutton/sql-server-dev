@@ -20,3 +20,8 @@ volumes:
   sqldata:
   sqllog:
   sqlbackup:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./sqlbackup
